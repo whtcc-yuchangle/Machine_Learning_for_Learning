@@ -18,6 +18,9 @@ Machine_Learning_for_Learning/
 ├── 02th_dongchediData.csv    # 懂车帝车辆评分数据
 ├── 02th_salary.xlsx          # 薪资数据（单工作表）
 ├── 02th_data.xlsx            # 多工作表数据文件
+├── 03th_matplotlib.ipynb     # Matplotlib基础教程
+├── 03th_matplotlib.md        # Matplotlib详细说明文档
+├── 03th_img/                 # Matplotlib生成的图片
 ├── README.md                 # 项目说明文档
 └── ...                       # 更多学习内容
 ```
@@ -54,7 +57,7 @@ Machine_Learning_for_Learning/
 1. 克隆或下载本项目
 2. 安装必要的依赖包：
    ```bash
-   pip install numpy pandas jupyter openpyxl requests lxml
+   pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn
    ```
 3. 启动Jupyter Notebook：
    ```bash
