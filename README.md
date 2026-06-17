@@ -12,6 +12,12 @@
 Machine_Learning_for_Learning/
 ├── 01th_numpy.ipynb          # NumPy基础教程
 ├── 01th_numpy.md             # NumPy详细说明文档
+├── 02th_pandas.ipynb         # Pandas基础教程
+├── 02th_pandas.md            # Pandas详细说明文档
+├── 02th_grade.csv            # 学生成绩数据
+├── 02th_dongchediData.csv    # 懂车帝车辆评分数据
+├── 02th_salary.xlsx          # 薪资数据（单工作表）
+├── 02th_data.xlsx            # 多工作表数据文件
 ├── README.md                 # 项目说明文档
 └── ...                       # 更多学习内容
 ```
@@ -22,7 +28,7 @@ Machine_Learning_for_Learning/
 - **01th - NumPy基础**：学习NumPy数组操作、数学运算、索引切片等基础知识
 
 ### 第二阶段：数据处理
-- （待添加）Pandas数据处理
+- **02th - Pandas数据处理**：学习Series和DataFrame数据结构、数据读写（CSV/Excel）、数据查看与统计、数据索引与切片操作，包含爬虫实战案例
 - （待添加）Matplotlib数据可视化
 
 ### 第三阶段：机器学习基础
@@ -48,7 +54,7 @@ Machine_Learning_for_Learning/
 1. 克隆或下载本项目
 2. 安装必要的依赖包：
    ```bash
-   pip install numpy jupyter
+   pip install numpy pandas jupyter openpyxl requests lxml
    ```
 3. 启动Jupyter Notebook：
    ```bash
