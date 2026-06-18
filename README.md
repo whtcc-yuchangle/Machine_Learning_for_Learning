@@ -34,6 +34,9 @@ Machine_Learning_for_Learning/
 ├── 07th_LinearRegression.md      # 线性回归详细文档
 ├── 08th_LogisticRegression.ipynb # 逻辑回归算法教程
 ├── 08th_LogisticRegression.md    # 逻辑回归详细文档
+├── 09th_SVM.ipynb                # SVM 支持向量机教程
+├── 09th_SVM.md                   # SVM 详细文档
+├── 09th_img/                     # SVM 可视化图片
 ├── CLAUDE.md                     # Claude Code 开发指引
 ├── .gitignore
 └── README.md
@@ -63,10 +66,10 @@ Machine_Learning_for_Learning/
 | 06th | **朴素贝叶斯** | 贝叶斯定理、特征条件独立假设、sklearn `GaussianNB`、混淆矩阵、概率预测、手写数字识别实战 |
 | 07th | **线性回归** | 最小二乘法、sklearn `LinearRegression`、MSE 与 R² 评估、模拟数据建模、回归系数解读 |
 | 08th | **逻辑回归** | Sigmoid 函数与交叉熵、sklearn `LogisticRegression` 多分类（OvR）、PyTorch 手动实现、鸢尾花分类实战 |
+| 09th | **SVM** | 最大间隔分类、支持向量与核函数、sklearn `SVC`（线性核）、Hinge Loss、PyTorch 手动实现、鸢尾花分类实战 |
 
 **计划中的内容：**
 - Scikit-learn 系统梳理（Pipeline、特征工程、模型选择）
-- 监督学习算法（SVM）
 - 集成学习（随机森林、GBDT、XGBoost）
 - 无监督学习算法（K-Means、DBSCAN、PCA）
 
@@ -104,7 +107,7 @@ pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn sciki
    ```bash
    jupyter notebook
    ```
-4. 按照 `01th → 02th → 03th → 04th → 05th → 06th → 07th → 08th` 的编号顺序打开并运行各 notebook
+4. 按照 `01th → 02th → 03th → 04th → 05th → 06th → 07th → 08th → 09th` 的编号顺序打开并运行各 notebook
 5. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
 
 > **提示**：如果你使用 Claude Code 打开本项目，`CLAUDE.md` 文件包含了本项目的开发指引和约定。
