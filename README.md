@@ -28,6 +28,8 @@ Machine_Learning_for_Learning/
 ├── 04th_KNN.md                   # KNN 详细文档
 ├── 05th_DecisionTree.ipynb       # 决策树算法教程
 ├── 05th_DecisionTree.md          # 决策树详细文档
+├── 06th_NaiveBayes.ipynb         # 朴素贝叶斯算法教程
+├── 06th_NaiveBayes.md            # 朴素贝叶斯详细文档
 ├── CLAUDE.md                     # Claude Code 开发指引
 ├── .gitignore
 └── README.md
@@ -54,10 +56,11 @@ Machine_Learning_for_Learning/
 |:---|:---|:---|
 | 04th | **KNN** | 算法原理、欧氏/曼哈顿距离、手动实现 KNN 分类器、sklearn `KNeighborsClassifier`、模型评估、乳腺癌检测实战 |
 | 05th | **决策树** | 树形模型原理、基尼系数与信息增益、sklearn `DecisionTreeClassifier`、graphviz 可视化、剪枝与参数调优、红酒分类实战 |
+| 06th | **朴素贝叶斯** | 贝叶斯定理、特征条件独立假设、sklearn `GaussianNB`、混淆矩阵、概率预测、手写数字识别实战 |
 
 **计划中的内容：**
 - Scikit-learn 系统梳理（Pipeline、特征工程、模型选择）
-- 监督学习算法（逻辑回归、SVM、朴素贝叶斯）
+- 监督学习算法（逻辑回归、SVM）
 - 集成学习（随机森林、GBDT、XGBoost）
 - 无监督学习算法（K-Means、DBSCAN、PCA）
 
@@ -95,7 +98,7 @@ pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn sciki
    ```bash
    jupyter notebook
    ```
-4. 按照 `01th → 02th → 03th → 04th → 05th` 的编号顺序打开并运行各 notebook
+4. 按照 `01th → 02th → 03th → 04th → 05th → 06th` 的编号顺序打开并运行各 notebook
 5. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
 
 > **提示**：如果你使用 Claude Code 打开本项目，`CLAUDE.md` 文件包含了本项目的开发指引和约定。
