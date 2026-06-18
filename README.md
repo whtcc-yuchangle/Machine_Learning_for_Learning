@@ -32,6 +32,8 @@ Machine_Learning_for_Learning/
 ├── 06th_NaiveBayes.md            # 朴素贝叶斯详细文档
 ├── 07th_LinearRegression.ipynb   # 线性回归算法教程
 ├── 07th_LinearRegression.md      # 线性回归详细文档
+├── 08th_LogisticRegression.ipynb # 逻辑回归算法教程
+├── 08th_LogisticRegression.md    # 逻辑回归详细文档
 ├── CLAUDE.md                     # Claude Code 开发指引
 ├── .gitignore
 └── README.md
@@ -60,10 +62,11 @@ Machine_Learning_for_Learning/
 | 05th | **决策树** | 树形模型原理、基尼系数与信息增益、sklearn `DecisionTreeClassifier`、graphviz 可视化、剪枝与参数调优、红酒分类实战 |
 | 06th | **朴素贝叶斯** | 贝叶斯定理、特征条件独立假设、sklearn `GaussianNB`、混淆矩阵、概率预测、手写数字识别实战 |
 | 07th | **线性回归** | 最小二乘法、sklearn `LinearRegression`、MSE 与 R² 评估、模拟数据建模、回归系数解读 |
+| 08th | **逻辑回归** | Sigmoid 函数与交叉熵、sklearn `LogisticRegression` 多分类（OvR）、PyTorch 手动实现、鸢尾花分类实战 |
 
 **计划中的内容：**
 - Scikit-learn 系统梳理（Pipeline、特征工程、模型选择）
-- 监督学习算法（逻辑回归、SVM）
+- 监督学习算法（SVM）
 - 集成学习（随机森林、GBDT、XGBoost）
 - 无监督学习算法（K-Means、DBSCAN、PCA）
 
@@ -78,10 +81,10 @@ Machine_Learning_for_Learning/
 
 - **Python**：3.11+
 - **核心依赖**：numpy、pandas、matplotlib、scikit-learn
-- **辅助工具**：jupyter、openpyxl、requests、lxml、seaborn、graphviz
+- **辅助工具**：jupyter、openpyxl、requests、lxml、seaborn、graphviz、torch
 
 ```bash
-pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn scikit-learn graphviz
+pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn scikit-learn graphviz torch
 ```
 
 > **注意**：05th 决策树可视化需要额外安装 [graphviz 系统软件](https://graphviz.org/download/) 并将其 `bin` 目录加入 PATH 环境变量。
@@ -95,13 +98,13 @@ pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn sciki
    ```
 2. 安装依赖：
    ```bash
-   pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn scikit-learn
+   pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn scikit-learn torch
    ```
 3. 启动 Jupyter Notebook：
    ```bash
    jupyter notebook
    ```
-4. 按照 `01th → 02th → 03th → 04th → 05th → 06th → 07th` 的编号顺序打开并运行各 notebook
+4. 按照 `01th → 02th → 03th → 04th → 05th → 06th → 07th → 08th` 的编号顺序打开并运行各 notebook
 5. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
 
 > **提示**：如果你使用 Claude Code 打开本项目，`CLAUDE.md` 文件包含了本项目的开发指引和约定。
