@@ -1,97 +1,105 @@
 # Machine Learning for Learning
 
-机器学习学习项目，用于系统地学习和实践机器学习相关知识。
-
-## 项目简介
-
-本项目是一个个人学习项目，旨在通过实践和笔记的方式系统地学习机器学习的核心概念、算法和工具。项目采用循序渐进的方式，从基础库开始，逐步深入到机器学习的各个领域。
+机器学习系统学习项目 — 通过 Jupyter Notebook 实践 + Markdown 详细文档的方式，循序渐进地掌握机器学习的核心概念、算法和工具。
 
 ## 项目结构
 
+每个学习主题包含两个互补文件：
+
+| 文件类型 | 用途 |
+|:---|:---|
+| `.ipynb` | 可运行的 Jupyter Notebook，包含完整代码和输出结果 |
+| `.md` | 详细参考文档，包含原理解析、公式推导、API 速查表、最佳实践 |
+
 ```
 Machine_Learning_for_Learning/
-├── 01th_numpy.ipynb          # NumPy基础教程
-├── 01th_numpy.md             # NumPy详细说明文档
-├── 02th_pandas.ipynb         # Pandas基础教程
-├── 02th_pandas.md            # Pandas详细说明文档
-├── 02th_grade.csv            # 学生成绩数据
-├── 02th_dongchediData.csv    # 懂车帝车辆评分数据
-├── 02th_salary.xlsx          # 薪资数据（单工作表）
-├── 02th_data.xlsx            # 多工作表数据文件
-├── 03th_matplotlib.ipynb     # Matplotlib基础教程
-├── 03th_matplotlib.md        # Matplotlib详细说明文档
-├── 03th_img/                 # Matplotlib生成的图片
-├── 04th_KNN.ipynb            # KNN算法教程
-├── 04th_KNN.md               # KNN详细说明文档
-├── README.md                 # 项目说明文档
-└── ...                       # 更多学习内容
+├── 01th_numpy.ipynb              # NumPy 基础教程
+├── 01th_numpy.md                 # NumPy 详细文档
+├── 02th_pandas.ipynb             # Pandas 数据处理教程
+├── 02th_pandas.md                # Pandas 详细文档
+├── 02th_grade.csv                # 学生成绩数据（Pandas 练习用）
+├── 02th_dongchediData.csv        # 懂车帝车辆评分数据（爬虫实战用）
+├── 02th_salary.xlsx              # 薪资数据（单工作表读取练习）
+├── 02th_data.xlsx                # 多工作表数据（多 Sheet 读取练习）
+├── 03th_matplotlib.ipynb         # Matplotlib 可视化教程
+├── 03th_matplotlib.md            # Matplotlib 详细文档
+├── 03th_img/                     # Matplotlib 生成的示例图片（28张）
+├── 04th_KNN.ipynb                # KNN 算法教程
+├── 04th_KNN.md                   # KNN 详细文档
+├── 05th_DecisionTree.ipynb       # 决策树算法教程
+├── 05th_DecisionTree.md          # 决策树详细文档
+├── CLAUDE.md                     # Claude Code 开发指引
+├── .gitignore
+└── README.md
 ```
 
 ## 学习路径
 
 ### 第一阶段：基础工具库
-- **01th - NumPy基础**：学习NumPy数组操作、数学运算、索引切片等基础知识
 
-### 第二阶段：数据处理
-- **02th - Pandas数据处理**：学习Series和DataFrame数据结构、数据读写（CSV/Excel）、数据查看与统计、数据索引与切片操作，包含爬虫实战案例
-- **03th - Matplotlib数据可视化**：学习基础绘图、图表样式设置、子视图布局、多种图表类型（折线图、散点图、柱状图、直方图、箱线图、饼图、雷达图、3D图、热力图）及高级技巧
+| 编号 | 主题 | 核心内容 |
+|:---|:---|:---|
+| 01th | **NumPy** | 数组创建与操作、数学运算、索引切片、广播机制、线性代数 |
 
-### 第三阶段：机器学习基础
-- **04th - KNN算法**：学习K近邻算法原理、距离度量（欧氏距离）、手动实现KNN分类器、使用sklearn的KNeighborsClassifier、模型评估、乳腺癌检测实战
-- （待添加）Scikit-learn基础
-- （待添加）监督学习算法
-- （待添加）无监督学习算法
+### 第二阶段：数据处理与可视化
 
-### 第四阶段：深度学习
-- （待添加）PyTorch基础
-- （待添加）神经网络
-- （待添加）卷积神经网络
-- （待添加）循环神经网络
+| 编号 | 主题 | 核心内容 |
+|:---|:---|:---|
+| 02th | **Pandas** | Series/DataFrame、CSV/Excel 读写、数据统计与清洗、索引切片、爬虫实战（懂车帝数据采集） |
+| 03th | **Matplotlib** | 折线图、散点图、柱状图、直方图、箱线图、饼图、雷达图、3D 图、热力图、子视图布局、样式定制 |
+
+### 第三阶段：机器学习算法
+
+| 编号 | 主题 | 核心内容 |
+|:---|:---|:---|
+| 04th | **KNN** | 算法原理、欧氏/曼哈顿距离、手动实现 KNN 分类器、sklearn `KNeighborsClassifier`、模型评估、乳腺癌检测实战 |
+| 05th | **决策树** | 树形模型原理、基尼系数与信息增益、sklearn `DecisionTreeClassifier`、graphviz 可视化、剪枝与参数调优、红酒分类实战 |
+
+**计划中的内容：**
+- Scikit-learn 系统梳理（Pipeline、特征工程、模型选择）
+- 监督学习算法（逻辑回归、SVM、朴素贝叶斯）
+- 集成学习（随机森林、GBDT、XGBoost）
+- 无监督学习算法（K-Means、DBSCAN、PCA）
+
+### 第四阶段：深度学习（计划中）
+
+- PyTorch 基础与自动微分
+- 全连接神经网络
+- 卷积神经网络（CNN）
+- 循环神经网络（RNN/LSTM）
 
 ## 环境要求
 
-- Python 3.11+
-- Jupyter Notebook
-- NumPy
-- Pandas
-- Matplotlib
-- scikit-learn
-- （更多依赖将根据学习内容添加）
+- **Python**：3.11+
+- **核心依赖**：numpy、pandas、matplotlib、scikit-learn
+- **辅助工具**：jupyter、openpyxl、requests、lxml、seaborn、graphviz
+
+```bash
+pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn scikit-learn graphviz
+```
+
+> **注意**：05th 决策树可视化需要额外安装 [graphviz 系统软件](https://graphviz.org/download/) 并将其 `bin` 目录加入 PATH 环境变量。
 
 ## 使用方法
 
-1. 克隆或下载本项目
-2. 安装必要的依赖包：
+1. 克隆项目：
+   ```bash
+   git clone <repo-url>
+   cd Machine_Learning_for_Learning
+   ```
+2. 安装依赖：
    ```bash
    pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn scikit-learn
    ```
-3. 启动Jupyter Notebook：
+3. 启动 Jupyter Notebook：
    ```bash
    jupyter notebook
    ```
-4. 按照编号顺序打开和运行各个notebook文件
+4. 按照 `01th → 02th → 03th → 04th → 05th` 的编号顺序打开并运行各 notebook
+5. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
 
-## 学习资源
-
-- 官方文档
-- 在线课程
-- 实战项目
-- 技术博客
-
-## 贡献
-
-这是一个个人学习项目，欢迎提出建议和交流学习心得。
-
-## 许可证
-
-本项目仅供学习交流使用。
-
-## 联系方式
-
-如有问题或建议，欢迎交流讨论。
+> **提示**：如果你使用 Claude Code 打开本项目，`CLAUDE.md` 文件包含了本项目的开发指引和约定。
 
 ---
-
-**学习进度**：持续更新中...
 
 **最后更新**：2026-06-18
