@@ -1,0 +1,19 @@
+# 数据目录
+data/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints/
+
+# 临时文件
+*.tmp
+*.temp
+
+# 系统文件
+.DS_Store
+Thumbs.db

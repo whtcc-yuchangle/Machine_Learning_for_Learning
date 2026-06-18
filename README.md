@@ -21,6 +21,8 @@ Machine_Learning_for_Learning/
 ├── 03th_matplotlib.ipynb     # Matplotlib基础教程
 ├── 03th_matplotlib.md        # Matplotlib详细说明文档
 ├── 03th_img/                 # Matplotlib生成的图片
+├── 04th_KNN.ipynb            # KNN算法教程
+├── 04th_KNN.md               # KNN详细说明文档
 ├── README.md                 # 项目说明文档
 └── ...                       # 更多学习内容
 ```
@@ -32,9 +34,10 @@ Machine_Learning_for_Learning/
 
 ### 第二阶段：数据处理
 - **02th - Pandas数据处理**：学习Series和DataFrame数据结构、数据读写（CSV/Excel）、数据查看与统计、数据索引与切片操作，包含爬虫实战案例
-- （待添加）Matplotlib数据可视化
+- **03th - Matplotlib数据可视化**：学习基础绘图、图表样式设置、子视图布局、多种图表类型（折线图、散点图、柱状图、直方图、箱线图、饼图、雷达图、3D图、热力图）及高级技巧
 
 ### 第三阶段：机器学习基础
+- **04th - KNN算法**：学习K近邻算法原理、距离度量（欧氏距离）、手动实现KNN分类器、使用sklearn的KNeighborsClassifier、模型评估、乳腺癌检测实战
 - （待添加）Scikit-learn基础
 - （待添加）监督学习算法
 - （待添加）无监督学习算法
@@ -50,6 +53,9 @@ Machine_Learning_for_Learning/
 - Python 3.11+
 - Jupyter Notebook
 - NumPy
+- Pandas
+- Matplotlib
+- scikit-learn
 - （更多依赖将根据学习内容添加）
 
 ## 使用方法
@@ -57,7 +63,7 @@ Machine_Learning_for_Learning/
 1. 克隆或下载本项目
 2. 安装必要的依赖包：
    ```bash
-   pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn
+   pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn scikit-learn
    ```
 3. 启动Jupyter Notebook：
    ```bash
@@ -88,4 +94,4 @@ Machine_Learning_for_Learning/
 
 **学习进度**：持续更新中...
 
-**最后更新**：2026-06-17
+**最后更新**：2026-06-18
