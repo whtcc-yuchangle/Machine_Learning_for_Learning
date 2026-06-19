@@ -37,6 +37,8 @@ Machine_Learning_for_Learning/
 ├── 09th_SVM.ipynb                # SVM 支持向量机教程
 ├── 09th_SVM.md                   # SVM 详细文档
 ├── 09th_img/                     # SVM 可视化图片
+├── 10th_ClusterAlgorithm.ipynb   # 聚类算法教程
+├── 10th_ClusterAlgorithm.md      # 聚类算法详细文档
 ├── CLAUDE.md                     # Claude Code 开发指引
 ├── .gitignore
 └── README.md
@@ -67,6 +69,7 @@ Machine_Learning_for_Learning/
 | 07th | **线性回归** | 最小二乘法、sklearn `LinearRegression`、MSE 与 R² 评估、模拟数据建模、回归系数解读 |
 | 08th | **逻辑回归** | Sigmoid 函数与交叉熵、sklearn `LogisticRegression` 多分类（OvR）、PyTorch 手动实现、鸢尾花分类实战 |
 | 09th | **SVM** | 最大间隔分类、支持向量与核函数、sklearn `SVC`（线性核）、Hinge Loss、PyTorch 手动实现、鸢尾花分类实战 |
+| 10th | **聚类算法** | K-Means / K-Medoids / GMM（原型聚类）、AGNES / BIRCH / CURE（层次聚类）、DBSCAN / OPTICS（密度聚类）、谱聚类（图论聚类）、t-SNE 降维可视化、pyclust 实战 |
 
 **计划中的内容：**
 - Scikit-learn 系统梳理（Pipeline、特征工程、模型选择）
@@ -107,11 +110,11 @@ pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn sciki
    ```bash
    jupyter notebook
    ```
-4. 按照 `01th → 02th → 03th → 04th → 05th → 06th → 07th → 08th → 09th` 的编号顺序打开并运行各 notebook
+4. 按照 `01th → 02th → 03th → 04th → 05th → 06th → 07th → 08th → 09th → 10th` 的编号顺序打开并运行各 notebook
 5. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
 
 > **提示**：如果你使用 Claude Code 打开本项目，`CLAUDE.md` 文件包含了本项目的开发指引和约定。
 
 ---
 
-**最后更新**：2026-06-18
+**最后更新**：2026-06-19
