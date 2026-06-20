@@ -1,11 +1,11 @@
-# 数据目录
-data/
-
 # Python 缓存
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# 模型存档
+model_save/
 
 # Jupyter Notebook 检查点
 .ipynb_checkpoints/

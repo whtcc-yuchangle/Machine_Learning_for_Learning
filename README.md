@@ -43,8 +43,17 @@ Machine_Learning_for_Learning/
 ├── 11th_data_preprocess.md       # 数据预处理详细文档
 ├── 12th_EnsembleLearning.ipynb   # 集成学习教程
 ├── 12th_EnsembleLearning.md      # 集成学习详细文档
-├── 13th_Neural_Network_Basics.ipynb # 神经网络基础教程
-├── 13th_Neural_Network_Basics.md    # 神经网络基础详细文档
+├── 13th_Neural_Network_Basics.ipynb    # 神经网络基础教程
+├── 13th_Neural_Network_Basics.md       # 神经网络基础详细文档
+├── 14th_Engineering_structure/     # 深度学习工程化结构
+│   ├── config.py                   # 超参数配置中心
+│   ├── preprocess.py               # 数据预处理（数据集划分）
+│   ├── dataset_banknote.py         # PyTorch Dataset 封装
+│   ├── model.py                    # MLP 模型定义
+│   ├── trainer.py                  # 训练脚本（含断点续训）
+│   ├── Inference.py                 # 推理脚本
+│   ├── data/                       # 数据目录
+│   └── README.md                   # 工程化结构详细文档
 ├── CLAUDE.md                     # Claude Code 开发指引
 ├── .gitignore
 └── README.md
@@ -94,6 +103,12 @@ Machine_Learning_for_Learning/
 - 卷积神经网络（CNN）
 - 循环神经网络（RNN/LSTM）
 
+### 第五阶段：工程化实践
+
+| 编号 | 主题 | 核心内容 |
+|:---|:---|:---|
+| 14th | **工程化结构** | PyTorch 工程项目模板（config → preprocess → dataset → model → trainer → inference）、纸币真伪分类实战（Banknote Authentication）、MLP 动态构建（`ModuleList` + `zip`）、断点续训与 checkpoint 机制、Adam + CrossEntropyLoss、Notebook 实验 vs 工程代码对比 |
+
 ## 环境要求
 
 - **Python**：3.11+
@@ -122,12 +137,11 @@ pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn sciki
    jupyter notebook
    ```
 4. 按照 `01th → 02th → 03th → 11th → 04th → 05th → 06th → 07th → 08th → 09th → 10th → 12th → 13th` 的编号顺序打开并运行各 notebook（11th 数据预处理建议在进入 ML 算法之前学习）
-5. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
+5. 完成 13th 后，进入 `14th_Engineering_structure/` 目录，按其中的 README 说明运行工程化训练流程
+6. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
 
 > **提示**：如果你使用 Claude Code 打开本项目，`CLAUDE.md` 文件包含了本项目的开发指引和约定。
 
 ---
 
 **最后更新**：2026-06-20
-
-> 注：12th 编号虽大于 11th，但其内容属于第三阶段（ML 算法），建议在学完 01th-11th 后再学习。
