@@ -39,6 +39,8 @@ Machine_Learning_for_Learning/
 ├── 09th_img/                     # SVM 可视化图片
 ├── 10th_ClusterAlgorithm.ipynb   # 聚类算法教程
 ├── 10th_ClusterAlgorithm.md      # 聚类算法详细文档
+├── 11th_data_preprocess.ipynb    # 数据预处理教程
+├── 11th_data_preprocess.md       # 数据预处理详细文档
 ├── CLAUDE.md                     # Claude Code 开发指引
 ├── .gitignore
 └── README.md
@@ -58,6 +60,7 @@ Machine_Learning_for_Learning/
 |:---|:---|:---|
 | 02th | **Pandas** | Series/DataFrame、CSV/Excel 读写、数据统计与清洗、索引切片、爬虫实战（懂车帝数据采集） |
 | 03th | **Matplotlib** | 折线图、散点图、柱状图、直方图、箱线图、饼图、雷达图、3D 图、热力图、子视图布局、样式定制 |
+| 11th | **数据预处理** | 缺失值检测与填充（missingno / SimpleImputer）、标准化与归一化（StandardScaler / MinMaxScaler）、特征编码（独热 / 标签 / 序列）、数据分箱（等宽 / 等频 / 决策树分箱）、特征选择（方差过滤 / 卡方检验 / 皮尔逊相关）、PCA 降维与降噪 |
 
 ### 第三阶段：机器学习算法
 
@@ -74,7 +77,7 @@ Machine_Learning_for_Learning/
 **计划中的内容：**
 - Scikit-learn 系统梳理（Pipeline、特征工程、模型选择）
 - 集成学习（随机森林、GBDT、XGBoost）
-- 无监督学习算法（K-Means、DBSCAN、PCA）
+- 无监督学习进阶（GMM、谱聚类）
 
 ### 第四阶段：深度学习（计划中）
 
@@ -110,11 +113,11 @@ pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn sciki
    ```bash
    jupyter notebook
    ```
-4. 按照 `01th → 02th → 03th → 04th → 05th → 06th → 07th → 08th → 09th → 10th` 的编号顺序打开并运行各 notebook
+4. 按照 `01th → 02th → 03th → 11th → 04th → 05th → 06th → 07th → 08th → 09th → 10th` 的编号顺序打开并运行各 notebook（11th 数据预处理建议在进入 ML 算法之前学习）
 5. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
 
 > **提示**：如果你使用 Claude Code 打开本项目，`CLAUDE.md` 文件包含了本项目的开发指引和约定。
 
 ---
 
-**最后更新**：2026-06-19
+**最后更新**：2026-06-20
