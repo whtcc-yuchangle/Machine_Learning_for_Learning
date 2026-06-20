@@ -43,6 +43,8 @@ Machine_Learning_for_Learning/
 ├── 11th_data_preprocess.md       # 数据预处理详细文档
 ├── 12th_EnsembleLearning.ipynb   # 集成学习教程
 ├── 12th_EnsembleLearning.md      # 集成学习详细文档
+├── 13th_Neural_Network_Basics.ipynb # 神经网络基础教程
+├── 13th_Neural_Network_Basics.md    # 神经网络基础详细文档
 ├── CLAUDE.md                     # Claude Code 开发指引
 ├── .gitignore
 └── README.md
@@ -82,10 +84,13 @@ Machine_Learning_for_Learning/
 - 集成学习进阶（GBDT、XGBoost）
 - 无监督学习进阶（GMM、谱聚类）
 
-### 第四阶段：深度学习（计划中）
+### 第四阶段：深度学习
 
-- PyTorch 基础与自动微分
-- 全连接神经网络
+| 编号 | 主题 | 核心内容 |
+|:---|:---|:---|
+| 13th | **神经网络基础** | 手动实现逻辑回归（自动微分 / 梯度下降）、PyTorch `nn.Module` 建模、单层感知机 vs 多层感知机（MLP）、GPU 训练（CUDA）、SGD 优化器与 BCELoss、训练循环五步法（清零→前向→损失→反向→更新） |
+
+**计划中的内容：**
 - 卷积神经网络（CNN）
 - 循环神经网络（RNN/LSTM）
 
@@ -116,7 +121,7 @@ pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn sciki
    ```bash
    jupyter notebook
    ```
-4. 按照 `01th → 02th → 03th → 11th → 04th → 05th → 06th → 07th → 08th → 09th → 10th → 12th` 的编号顺序打开并运行各 notebook（11th 数据预处理建议在进入 ML 算法之前学习）
+4. 按照 `01th → 02th → 03th → 11th → 04th → 05th → 06th → 07th → 08th → 09th → 10th → 12th → 13th` 的编号顺序打开并运行各 notebook（11th 数据预处理建议在进入 ML 算法之前学习）
 5. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
 
 > **提示**：如果你使用 Claude Code 打开本项目，`CLAUDE.md` 文件包含了本项目的开发指引和约定。
