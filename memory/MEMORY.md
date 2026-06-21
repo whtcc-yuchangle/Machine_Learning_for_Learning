@@ -1,0 +1,1 @@
+- [Always push to remote](always-push-to-remote.md) — 每次 commit 后自动 push 到 GitHub
