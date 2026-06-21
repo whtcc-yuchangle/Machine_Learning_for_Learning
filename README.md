@@ -54,6 +54,8 @@ Machine_Learning_for_Learning/
 │   ├── Inference.py                 # 推理脚本
 │   ├── data/                       # 数据目录
 │   └── README.md                   # 工程化结构详细文档
+├── 15th_Deep_learning_basic_components.ipynb  # 深度学习基础组件教程
+├── 15th_Deep_learning_basic_components.md     # 深度学习基础组件详细文档
 ├── CLAUDE.md                     # Claude Code 开发指引
 ├── .gitignore
 └── README.md
@@ -98,6 +100,7 @@ Machine_Learning_for_Learning/
 | 编号 | 主题 | 核心内容 |
 |:---|:---|:---|
 | 13th | **神经网络基础** | 手动实现逻辑回归（自动微分 / 梯度下降）、PyTorch `nn.Module` 建模、单层感知机 vs 多层感知机（MLP）、GPU 训练（CUDA）、SGD 优化器与 BCELoss、训练循环五步法（清零→前向→损失→反向→更新） |
+| 15th | **深度学习基础组件** | 权重初始化原理（Xavier / Kaiming）、激活函数全景对比（Sigmoid / Tanh / ReLU / Leaky ReLU / ELU / Mish）、归一化层对比（BatchNorm / LayerNorm / InstanceNorm / GroupNorm + 适用场景）、L1/L2 正则化、MLP 完整训练案例 |
 
 **计划中的内容：**
 - 卷积神经网络（CNN）
@@ -136,12 +139,12 @@ pip install numpy pandas matplotlib jupyter openpyxl requests lxml seaborn sciki
    ```bash
    jupyter notebook
    ```
-4. 按照 `01th → 02th → 03th → 11th → 04th → 05th → 06th → 07th → 08th → 09th → 10th → 12th → 13th` 的编号顺序打开并运行各 notebook（11th 数据预处理建议在进入 ML 算法之前学习）
-5. 完成 13th 后，进入 `14th_Engineering_structure/` 目录，按其中的 README 说明运行工程化训练流程
+4. 按照 `01th → 02th → 03th → 11th → 04th → 05th → 06th → 07th → 08th → 09th → 10th → 12th → 13th → 15th` 的编号顺序打开并运行各 notebook（11th 数据预处理建议在进入 ML 算法之前学习）
+5. 完成 13th 和 15th 后，进入 `14th_Engineering_structure/` 目录，按其中的 README 说明运行工程化训练流程
 6. 每个 notebook 配套的 `.md` 文档可供查阅原理详解和 API 速查
 
 > **提示**：如果你使用 Claude Code 打开本项目，`CLAUDE.md` 文件包含了本项目的开发指引和约定。
 
 ---
 
-**最后更新**：2026-06-20
+**最后更新**：2026-06-21
